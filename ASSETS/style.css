@@ -182,3 +182,14 @@ footer {
   text-align: center;
   font-size: 0.9em;
 }
+
+footer a{
+  color:  #6F4E37;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover{
+  color: #D2B48C;
+}
