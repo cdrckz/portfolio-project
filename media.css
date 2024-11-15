@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    header nav ul {
+      flex-direction: column;
+      gap: 0.5em;
+    }
+    table,
+    th,
+    td {
+      font-size: 0.9em;
+    }
+  
+    #home img {
+      width: 100px;
+    }
+  }

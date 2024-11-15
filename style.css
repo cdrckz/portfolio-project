@@ -39,6 +39,8 @@ section h2 {
   color: #8b5e34;
   margin-bottom: 0.5em;
 }
+
+/* Home */
 #home {
   padding: 2em;
   text-align: center;
@@ -57,36 +59,79 @@ section h2 {
   color: #4b3f2f;
 }
 
+/* Skills */
 section {
-    padding: 2em;
-    text-align: center;
+  padding: 2em;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  border: 1px solid #8b5e34;
+  padding: 12px;
+  text-align: left;
+  color: #4b3f2f;
+}
+
+th {
+  background-color: #d3b8a1;
+  color: #4b3f2f;
+}
+
+tr:nth-child(even) {
+  background-color: #f4e8da;
+}
+
+tr:hover {
+  background-color: #e6ccb2;
+}
+
+/* Projects */
+#projects ul {
+    list-style: none;
+    padding: 0;
   }
   
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  #projects ul li {
+    background-color: #FAF3E0; /* Light cream */
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  th,
-  td {
-    border: 1px solid #8B5E34;
-    padding: 12px;
-    text-align: left;
-    color: #4B3F2F;
-  }
-  
-  th {
-    background-color: #D3B8A1; 
-    color: #4B3F2F;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #F4E8DA;
-  }
-  
-  tr:hover {
-    background-color: #E6CCB2; 
+  #projects ul li strong {
+    color: #8B5E34;
   }
 
+/* Contact */
+
+#contact p {
+    color: #4B3F2F;
+    font-size: 1.1em;
+  }
+
+  #contact a {
+    color: #8B5E34;
+    text-decoration: none;
+  }
+  
+  #contact a:hover {
+    color: #D3B8A1;
+    text-decoration: underline;
+  }
+
+footer {
+    background-color: #8B5E34;
+    color: #F4E8DA;
+    padding: 1em;
+    text-align: center;
+    font-size: 0.9em;
+}
