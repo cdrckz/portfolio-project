@@ -13,3 +13,15 @@
       width: 100px;
     }
   }
+
+  @media (max-width: 768px) {
+    #home img {
+      width: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #home img {
+      width: 100px;
+    }
+  }

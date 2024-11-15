@@ -52,11 +52,23 @@ section h2 {
   height: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 1em;
+  transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+
+#home img:hover{
+  transform:scale(1.1);
+  box-shadow:  0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 #home p {
   font-size: 1.1em;
   color: #4b3f2f;
+}
+
+
+.focus-mode *:not(header):not(#home img):not(nav) {
+  opacity: 0.2;
+  pointer-events: none;
 }
 
 /* Skills */
@@ -193,3 +205,4 @@ footer a{
 footer a:hover{
   color: #D2B48C;
 }
+
