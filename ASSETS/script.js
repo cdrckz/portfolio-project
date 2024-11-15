@@ -6,7 +6,17 @@ document.addEventListener("DOMContentLoaded", function() {
   // Check if the elements exist before adding event listeners
   if (hamburger && navLinks) {
     hamburger.addEventListener('click', function() {
+      // Log to verify button click
+      console.log('Hamburger clicked!');
+      
       navLinks.classList.toggle('active'); 
+      
+      // Log to check the nav-links' state after toggle
+      if (navLinks.classList.contains('active')) {
+        console.log('Menu is active');
+      } else {
+        console.log('Menu is inactive');
+      }
     });
   } else {
     console.error("Couldn't find hamburger or nav-links elements.");

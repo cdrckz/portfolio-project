@@ -73,10 +73,47 @@ section h2 {
   color: #4b3f2f;
 }
 
+#home p:hover {
+  color: #8b5e34; 
+  transition: color 0.3s ease; 
+}
+
 
 .focus-mode *:not(header):not(#home img):not(nav) {
   opacity: 0.2;
   pointer-events: none;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #8b5e34;
+  font-size: 1.5em;
+}
+
+.contact-info a {
+  color: #4b3f2f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: #d3b8a1;
 }
 
 /* Skills */
@@ -200,12 +237,12 @@ footer {
   color: #f4e8da;
   padding: 1em;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 footer a{
   color:  #6F4E37;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0 10px;
   transition: color 0.3s ease;
 }
@@ -218,7 +255,7 @@ footer a:hover{
 
 /* Hide the menu on small screens initially */
 .nav-links {
-  display: flex; 
+  display: none; 
 }
 
 .hamburger {
@@ -228,7 +265,6 @@ footer a:hover{
   border: none;
   cursor: pointer;
   display: none; 
-  z-index: 20;
 }
 
 .nav-links.active {
@@ -246,36 +282,4 @@ footer a:hover{
   z-index: 10;
 }
 
-/* For large screens, show the menu */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none; /* Hide links initially on small screens */
-  }
-
-  .hamburger {
-    display: block; /* Show hamburger icon */
-  }
-
-  .nav-links.active {
-    display: flex; 
-  }
-}
-
-/* For larger screens */
-@media (min-width: 769px) {
-  header nav {
-    justify-content: center; /* Center the nav on large screens */
-  }
-  
-  .nav-links {
-    display: flex;
-    justify-content: center;
-    gap: 1.5em;
-    align-items: center;
-  }
-
-  .hamburger {
-    display: none; /* Hide hamburger on large screens */
-  }
-}
 

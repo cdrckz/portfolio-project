@@ -23,3 +23,38 @@
       width: 100px;
     }
   }
+
+
+  /* For large screens, show the menu */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links initially on small screens */
+  }
+  
+  .hamburger {
+    display: block; /* Show hamburger icon */
+  }
+
+  .nav-links.active {
+    display: flex; 
+  }
+
+}
+
+/* For larger screens */
+@media (min-width: 769px) {
+  header nav {
+    justify-content: center; /* Center the nav on large screens */
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger on large screens */
+  }
+}
