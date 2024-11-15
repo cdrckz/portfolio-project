@@ -95,43 +95,90 @@ tr:hover {
 
 /* Projects */
 #projects ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  #projects ul li {
-    background-color: #FAF3E0; /* Light cream */
-    padding: 1em;
-    margin: 1em 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  #projects ul li strong {
-    color: #8B5E34;
-  }
+  list-style: none;
+  padding: 0;
+}
+
+#projects ul li {
+  background-color: #faf3e0; /* Light cream */
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#projects ul li strong {
+  color: #8b5e34;
+}
 
 /* Contact */
 
+#contact {
+  padding: 2em;
+  text-align: center;
+  background-color: #faf3e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+  color: #8b5e34;
+  margin-bottom: 0.5em;
+}
+
 #contact p {
-    color: #4B3F2F;
-    font-size: 1.1em;
-  }
+  color: #4b3f2f;
+  font-size: 1em;
+}
 
-  #contact a {
-    color: #8B5E34;
-    text-decoration: none;
-  }
-  
-  #contact a:hover {
-    color: #D3B8A1;
-    text-decoration: underline;
-  }
+.contact-form label {
+  display: block;
+  color: #4b3f2f;
+  margin: 0.5em 0 0.3em;
+  font-weight: bold;
+}
 
+.input-field, .textarea-field {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #8B5E34;
+  border-radius: 4px;
+  background-color: #F4E8DA; 
+  color: #4B3F2F;
+  font-size: 1em;
+}
+
+.input-field:focus, .textarea-field:focus {
+  border-color: #D3B8A1; 
+  outline: none;
+}
+ 
+.textarea-field {
+  height: 100px;
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #8B5E34;
+  color: #F4E8DA;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+} 
+
+.submit-button {
+  background-color: #D3B8A1;;
+}
+
+/* Footer */
 footer {
-    background-color: #8B5E34;
-    color: #F4E8DA;
-    padding: 1em;
-    text-align: center;
-    font-size: 0.9em;
+  background-color: #8b5e34;
+  color: #f4e8da;
+  padding: 1em;
+  text-align: center;
+  font-size: 0.9em;
 }
