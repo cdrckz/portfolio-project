@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
       
       // Log to check the nav-links' state after toggle
       if (navLinks.classList.contains('active')) {
-        console.log('Menu is active');
+        console.log('Menu is active'); //debugging
       } else {
         console.log('Menu is inactive');
       }
@@ -39,3 +39,4 @@ document.addEventListener("DOMContentLoaded", function() {
     window.location.href = 'index.html'; 
   });
 });
+
