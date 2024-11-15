@@ -1,4 +1,8 @@
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
+    #home img {
+      width: 120px;
+    }
+
     header nav ul {
       flex-direction: column;
       gap: 0.5em;
@@ -11,12 +15,6 @@
   
     #home img {
       width: 100px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    #home img {
-      width: 120px;
     }
   }
   

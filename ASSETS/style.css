@@ -17,11 +17,19 @@ header {
   text-align: center;
 }
 
+header nav {
+  display: flex;
+  justify-content: space-between; /* space between hamburger and nav-links */
+  align-items: center;
+}
+
 header nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 1.5em;
+  width: 100%; 
+  align-items: center;
 }
 
 header nav ul li a {
@@ -204,5 +212,70 @@ footer a{
 
 footer a:hover{
   color: #D2B48C;
+}
+
+/* hambur menu */
+
+/* Hide the menu on small screens initially */
+.nav-links {
+  display: flex; 
+}
+
+.hamburger {
+  font-size: 1.5em;
+  color: #f4e8da;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; 
+  z-index: 20;
+}
+
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #8b5e34;
+  z-index: 10;
+}
+
+/* For large screens, show the menu */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links initially on small screens */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon */
+  }
+
+  .nav-links.active {
+    display: flex; 
+  }
+}
+
+/* For larger screens */
+@media (min-width: 769px) {
+  header nav {
+    justify-content: center; /* Center the nav on large screens */
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger on large screens */
+  }
 }
 
