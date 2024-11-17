@@ -76,3 +76,52 @@
     display: none; /* Hide hamburger on large screens */
   }
 }
+
+/* animation for nav-links */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.nav-links {
+  animation: slideIn 0.8s ease-out;
+}
+
+/* fade in effect in heading */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* fade in effect in project */
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* make the contact form dissapear */
+@keyframes fadeOutForm {
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+

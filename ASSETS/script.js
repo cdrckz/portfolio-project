@@ -35,8 +35,10 @@ document.addEventListener("DOMContentLoaded", function() {
   // Contact form submission
   document.getElementById('contactForm')?.addEventListener('submit', function(event) {
     event.preventDefault();
+    const form = event.target;
+
+    form.classList.add('fade-out');
     alert("Thank you for your message :)");
     window.location.href = 'index.html'; 
   });
 });
-

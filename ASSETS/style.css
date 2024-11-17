@@ -44,8 +44,9 @@ header nav ul li a:hover {
 }
 
 section h2 {
-  color: #8b5e34;
-  margin-bottom: 0.5em;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease-out forwards;
 }
 
 /* Home */
@@ -186,6 +187,24 @@ tr:hover {
   color: #8b5e34;
 }
 
+#projects ul li {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInSlide 0.8s ease-out forwards;
+}
+
+#projects ul li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+#projects ul li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+#projects ul li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
 /* Contact */
 
 #contact {
@@ -197,7 +216,7 @@ tr:hover {
 }
 
 #contact h2 {
-  color: #8b5e34;
+  color: #4b3f2f;
   margin-bottom: 0.5em;
 }
 
@@ -211,6 +230,10 @@ tr:hover {
   color: #4b3f2f;
   margin: 0.5em 0 0.3em;
   font-weight: bold;
+}
+
+.contact-form {
+  animation: fadeOutForm 1s ease-in-out;
 }
 
 .input-field, .textarea-field {
@@ -299,3 +322,4 @@ footer a:hover{
   background-color: #8b5e34;
   z-index: 10;
 }
+
