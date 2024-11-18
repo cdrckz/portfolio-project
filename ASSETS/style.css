@@ -35,7 +35,6 @@ header nav ul {
   gap: 1.5em;
   width: 100%; 
   align-items: center;
-  font-family: 'Raleway', sans-serif;
 }
 
 header nav ul li a {
@@ -43,6 +42,7 @@ header nav ul li a {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
+  font-family: 'Raleway', sans-serif;
 }
 
 header nav ul li a:hover {
@@ -196,8 +196,9 @@ th,
 td {
   border: 1px solid #8b5e34;
   padding: 12px;
-  text-align: left;
+  text-align: center;
   color: #4b3f2f;
+  font-family: 'Raleway', sans-serif;
 }
 
 th {
@@ -213,6 +214,11 @@ tr:hover {
   background-color: #e6ccb2;
 }
 
+i {
+  font-size: 1.5em; 
+  margin-right: 0.5em; 
+}
+
 /* Projects */
 #projects ul {
   list-style: none;
@@ -225,6 +231,7 @@ tr:hover {
   margin: 1em 0;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Raleway', sans-serif;
 }
 
 #projects ul li strong {
@@ -274,6 +281,7 @@ tr:hover {
   color: #4b3f2f;
   margin: 0.5em 0 0.3em;
   font-weight: bold;
+  font-family: 'Raleway', sans-serif;  
 }
 
 .contact-form {
@@ -289,6 +297,7 @@ tr:hover {
   background-color: #F4E8DA; 
   color: #4B3F2F;
   font-size: 1em;
+  font-family: 'Raleway', sans-serif;
 }
 
 .input-field:focus, .textarea-field:focus {
@@ -310,6 +319,7 @@ tr:hover {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s;
+  font-family: 'Raleway', sans-serif;
 } 
 
 .submit-button {
