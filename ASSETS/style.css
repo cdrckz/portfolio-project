@@ -5,9 +5,13 @@
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family:  Helvetica, sans-serif;
   background-color: #f4e8da;
   color: #4b3f2f;
+}
+
+h1, h2, h3, p{
+  font-family: 'Raleway', sans-serif;
 }
 
 header {
@@ -21,6 +25,7 @@ header nav {
   display: flex;
   justify-content: space-between; /* space between hamburger and nav-links */
   align-items: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 header nav ul {
@@ -30,6 +35,7 @@ header nav ul {
   gap: 1.5em;
   width: 100%; 
   align-items: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 header nav ul li a {
@@ -73,12 +79,13 @@ section h2 {
 }
 
 .name-title{
-  font-family: "Raleway", sans-serif; /* para sa portfolio font */
+  font-family: 'Raleway', sans-serif; /* para sa portfolio font */
   font-size: 3.5em;
   font-weight: bold;
   color: #8b5e34;
   margin-bottom: 0.5em;
 }
+
 
 .name-title .highlight {
   font-size: 1.4rem; 
